@@ -1,0 +1,778 @@
+@charset "utf-8";
+@import url('font.css');
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+summary,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -.6px;
+    box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+li,
+ol,
+ul {
+    list-style: none;
+    /* font-size: 0 */
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+    content: none;
+}
+
+em,
+address {
+    font-style: normal;
+}
+
+img,
+fieldset {
+    border: 0 none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a { selector-dummy : expression(this.hideFocus=true);}
+
+a,
+a:link,
+a:visited,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+    font-weight:none;
+}
+
+button,
+input {
+    border: none;
+}
+
+button:focus,
+input:focus {
+    outline: 0;
+}
+
+button {
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button,
+input,
+textarea {
+    background-color: transparent;
+}
+
+textarea {
+    border: none;
+    resize: none;
+}
+
+/* 반응형 */
+video,
+img {
+    width: 100%;
+}
+
+/* Reset */
+caption,
+legend {
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999em;
+    overflow: hidden
+}
+
+
+/* basic */
+body,
+html {
+    scroll-behavior: smooth;
+    font-family: NotoSansKR, Inter, sans-serif;
+    font-weight: 400;
+    color: #393939;
+    word-break: keep-all;
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+    -ms-text-size-adjust: none;
+    /*Ie*/
+    -o-text-size-adjust: none;
+    /*old versions of Opera*/
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+
+/* layout */
+#layout,
+body,
+html {
+    /* height: 100%;
+    overflow: hidden; */
+}
+
+#layout {
+    position: relative;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
+}
+
+.inner {
+    padding: 0 20px;
+    width: 100%;
+}
+
+.hide-target {
+    transition: all .5s linear;
+}
+
+
+
+
+/* input style */
+input {
+    background-image: none;
+}
+
+
+button,
+input[type=button],
+input[type=reset],
+input[type=text],
+input[type=password],
+input[type=submit],
+input[type=search],
+input[type=tel],
+input[type=email],
+input[type=date] {
+    -webkit-appearance: none;
+    border-radius: 0
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+input:checked[type=checkbox] {
+    background-color: #666;
+    /* -webkit-appearance: checkbox */
+}
+
+/*사파리 버튼 초기화*/
+input[type="text"],
+input[type="password"],
+input[type="button"],
+input[type="submit"],
+input[type="url"],
+input[type="search"],
+textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+
+/*input[type=date]*/
+input[type=date] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type=date]::-webkit-outer-spin-button,
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+
+/*placeholder*/
+input::-ms-input-placeholder {
+    font-weight: 400;
+    color: #c2c2c2;
+    font-size: 1.4rem;
+}
+
+input::-webkit-input-placeholder {
+    font-weight: 400;
+    color: #c2c2c2;
+    font-size: 1.4rem;
+}
+
+input::-moz-placeholder {
+    font-weight: 400;
+    color: #c2c2c2;
+    font-size: 1.4rem;
+}
+
+input::-o-placeholder {
+    font-weight: 400;
+    color: #c2c2c2;
+    font-size: 1.4rem;
+}
+
+textarea::-o-placeholder {
+    font-weight: 400;
+    color: #aaa;
+    font-size: 1.4rem;
+}
+
+textarea::-ms-input-placeholder {
+    font-weight: 400;
+    color: #aaa;
+    font-size: 1.4rem;
+}
+
+textarea::-webkit-input-placeholder {
+    font-weight: 400;
+    color: #aaa;
+    font-size: 1.4rem;
+}
+
+textarea::-moz-placeholder {
+    font-weight: 400;
+    color: #aaa;
+    font-size: 1.4rem;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    /* WebKit browsers */
+    font-weight: 400;
+    color: #aaa;
+    font-size: 1.4rem;
+}
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    font-weight: 400;
+    color: #aaa;
+    font-size: 1.4rem;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    font-weight: 400;
+    color: #aaa;
+    font-size: 1.4rem;
+}
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    font-weight: 400;
+    color: #aaa;
+    font-size: 1.4rem;
+}
+
+/*input[type="text"]::placeholder{font-size: 17px;position: absolute;bottom:0;}*/
+
+/*input 값 없는 애들 padding 하기*/
+.p_inner {
+    padding: 20px 15px 15px;
+}
+
+
+/*select*/
+select {
+    font-family: 'Noto Sans KR';
+    font-size: 19px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../img/arrow_down.png);
+    background-repeat: no-repeat;
+    background-position: 93% 50%;
+    background-size: 15px;
+    background-color: #fff;
+    border: none;
+    width: 100%;
+}
+
+/* option{text-align: center;} */
+/*select IE10,11의 네이티브 화살표 숨기기*/
+select::-ms-expand {
+    display: none;
+}
+
+
+
+/*footer 버튼*/
+.fix_a {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    width: 91.6% !important;
+    height: 50px;
+    margin: 0 auto;
+    z-index: 10000;
+}
+
+.fix {
+    width: 100%;
+    height: 100%;
+    background: #ff8228;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.fix2 {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 45px;
+    width: 91.6% !important;
+    margin: 0 auto;
+}
+
+/*a 링크값*/
+.full {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.inner2 {
+    width: 88%;
+    margin: 0 auto;
+}
+
+/*상단 50*/
+.inner_h {
+    padding: 45px 0 55px;
+}
+
+.inner_box {
+    padding-top: 45px;
+}
+
+.inner_box3 {
+    padding-top: 80px;
+}
+
+/*하단 50*/
+.inner_box1 {
+    padding-bottom: 60px;
+}
+
+.inner_box2 {
+    padding-bottom: 80px;
+}
+
+.inner_box2_ {
+    padding-bottom: 100px;
+}
+
+.inner_box4 {
+    padding-bottom: 150px;
+}
+
+
+
+
+/*부모 자식 설정*/
+.posr {
+    position: relative;
+}
+
+.posa {
+    position: absolute;
+}
+
+.half_fix {
+    position: fixed;
+    right: 15px;
+    bottom: 25px;
+    height: 50px;
+    line-height: 50px;
+    width: 44.5% !important;
+    background: #ff8228;
+    color: #fff !important;
+    font-size: 17px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+}
+
+.half_fix2 {
+    position: fixed;
+    left: 15px;
+    bottom: 25px;
+    height: 50px !important;
+    line-height: 50px;
+    width: 44.5% !important;
+    border: 1px solid #ff8228;
+    background: #fff;
+    color: #fbbb18;
+    font-size: 17px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+}
+
+.half_fix:visited {
+    color: #fff;
+}
+
+.half_fix2:visited {
+    color: #ff8228;
+}
+
+
+/*세로 가운데 맞추기*/
+.y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+
+/*가로세로 가운데 맞추기*/
+.xy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.middle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.top-left {
+    top: 0;
+    left: 0
+}
+
+.top-center {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center !important
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+    text-align: right !important
+}
+
+.middle-left {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%)
+}
+
+.middle-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center !important
+}
+
+.middle-right {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: right !important
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0
+}
+
+.bottom-center {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center !important
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    text-align: right !important
+}
+
+
+/*display*/
+.dpb {
+    display: block;
+}
+
+.dpi {
+    display: inline;
+}
+
+.dpib {
+    display: inline-block;
+}
+
+
+/*float*/
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear {
+    clear: both
+}
+
+/* clearfix */
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: block;
+    content: '';
+    line-height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* IR(Image Replacement) 효과 */
+/* 의미있는 이미지의 대체텍스트 */
+.ir_pm {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.ir_wa {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+/* 접근성을 위한 숨김 텍스트 */
+.ir_so {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+/*공간남음 (단순히 안보이게만)*/
+.is-hide {
+    opacity: 0;
+    transform: translateY(-100%)
+}
+
+
+
+
+
+/* device */
+.pc-only .device-mobile {
+    display: none
+}
+
+@media screen and (max-width:768px) {
+    .pc-only {
+        display: none
+    }
+}
+
+.tablet-only {
+    display: none
+}
+
+.tablet-only .device-tablet {
+    display: block
+}
+
+@media screen and (max-width:1024px) {
+    .tablet-only {
+        display: block
+    }
+}
+
+.mo-only {
+    display: none
+}
+
+.mo-only .device-mobile {
+    display: inline
+}
+
+@media screen and (max-width:768px) {
+    .mo-only {
+        display: inline
+    }
+}
