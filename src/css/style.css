@@ -8,6 +8,25 @@
     width: 100%;
 }
 
+
+/* easter-egg */
+.easter-egg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.easter-egg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
 /* line-animation */
 /* 
     #logo_svg : script를 같이 넣어줘야 순차적으로 움직임
@@ -18,8 +37,8 @@
 */
 #logo_svg,
 #logo_lazy {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     /* outline: 1px solid #ccc;
     background-color: #fff; */
 }
@@ -36,23 +55,6 @@
 @keyframes ani_s {
   /* from { stroke-dashoffset: 1100; } */
   to { stroke-dashoffset: 0; }
-}
-
-
-/* easter-egg */
-.easter-egg {
-    position: relative;
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
-    overflow: hidden;
-    cursor: pointer;
-}
-.easter-egg img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
 }
 
 /* marqee 1 */
@@ -100,31 +102,10 @@
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
-@-webkit-keyframes marquee {
-    from   { -webkit-transform: translate(0%);}
-    to { -webkit-transform: translate(-101%);}
-}
-@-moz-keyframes marquee {
-    from   { -moz-transform: translate(0%);}
-    to { -moz-transform: translate(-101%);}
-}
-@-ms-keyframes marquee {
-    from   { -ms-transform: translate(0%);}
-    to { -ms-transform: translate(-101%);}
-}
-@-o-keyframes marquee {
-    from   { -o-transform: translate(0%);}
-    to { -o-transform: translate(-101%);}
-}
-@keyframes marquee {
-    from   { transform: translate(0%);}
-    to { transform: translate(-101%);}
-}
 
 /* marqee 2 */
 .flow {
     position: relative;
-    width: 100%;
     height: 600px;
     overflow: hidden;
 }
@@ -155,7 +136,7 @@
 }
 
 .flow-txt {
-    font-size: 180px;
+    font-size: 100px;
     width: auto;
     display: inline-flex;
     flex-wrap: nowrap;
@@ -173,8 +154,8 @@
     text-transform: uppercase;
 }
 .flow-txt .easter-egg {
-    flex: 0 0 190px;
-    height: 190px;
+    flex: 0 0 150px;
+    height: 150px;
 }
 .flow-txt.ani__left {
     -webkit-animation-name: ani-left;
@@ -199,88 +180,3 @@
     animation-name: ani-right2;
 }
 
-@-webkit-keyframes ani-left {
-    0% { transform: translateX(100vw) }
-    to { transform: translateX(calc(-200% + 100vw)) }
-}
-@-moz-keyframes ani-left {
-    0% { transform: translateX(100vw) }
-    to { transform: translateX(calc(-200% + 100vw)) }
-}
-@-ms-keyframes ani-left {
-    0% { transform: translateX(100vw) }
-    to { transform: translateX(calc(-200% + 100vw)) }
-}
-@-o-keyframes ani-left {
-    0% { transform: translateX(100vw) }
-    to { transform: translateX(calc(-200% + 100vw)) }
-}
-@keyframes ani-left {
-    0% { transform: translateX(100vw) }
-    to { transform: translateX(calc(-200% + 100vw)) }
-}
-
-
-@-webkit-keyframes ani-left2 {
-    0% { transform: translateX(calc(-100% + 100vw)) }
-    to { transform: translateX(calc(-300% + 100vw)) }
-}
-@-moz-keyframes ani-left2 {
-    0% { transform: translateX(calc(-100% + 100vw)) }
-    to { transform: translateX(calc(-300% + 100vw)) }
-}
-@-ms-keyframes ani-left2 {
-    0% { transform: translateX(calc(-100% + 100vw)) }
-    to { transform: translateX(calc(-300% + 100vw)) }
-}
-@-o-keyframes ani-left2 {
-    0% { transform: translateX(calc(-100% + 100vw)) }
-    to { transform: translateX(calc(-300% + 100vw)) }
-}
-@keyframes ani-left2 {
-    0% { transform: translateX(calc(-100% + 100vw)) }
-    to { transform: translateX(calc(-300% + 100vw)) }
-}
-
-
-@-webkit-keyframes ani-right {
-    0% { transform: translateX(-100%) }
-    to { transform: translateX(100%) }
-}
-@-moz-keyframes ani-right {
-    0% { transform: translateX(-100%) }
-    to { transform: translateX(100%) }
-}
-@-ms-keyframes ani-right {
-    0% { transform: translateX(-100%) }
-    to { transform: translateX(100%) }
-}
-@-o-keyframes ani-right {
-    0% { transform: translateX(-100%) }
-    to { transform: translateX(100%) }
-}
-@keyframes ani-right {
-    0% { transform: translateX(-100%) }
-    to { transform: translateX(100%) }
-}
-
-@-webkit-keyframes ani-right2 {
-    0% { transform: translateX(-200%) }
-    to { transform: translateX(0) }
-}
-@-moz-keyframes ani-right2 {
-    0% { transform: translateX(-200%) }
-    to { transform: translateX(0) }
-}
-@-ms-keyframes ani-right2 {
-    0% { transform: translateX(-200%) }
-    to { transform: translateX(0) }
-}
-@-o-keyframes ani-right2 {
-    0% { transform: translateX(-200%) }
-    to { transform: translateX(0) }
-}
-@keyframes ani-right2 {
-    0% { transform: translateX(-200%) }
-    to { transform: translateX(0) }
-}

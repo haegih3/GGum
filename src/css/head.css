@@ -1,0 +1,24 @@
+.header {
+    
+}
+
+.title_wrap {
+    /* display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse; */
+    height: 400px;
+}
+.title_wrap .svg_wrap {
+    /* flex-grow: 1; */
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 400px;
+}
+.title_wrap .flow {
+    /* flex-grow: 1; */
+    position: absolute;
+    right: 0; bottom: 0;
+    width: calc(100% - 390px);
+    height: 165px;
+    margin-bottom: 30px;
+}
