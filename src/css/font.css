@@ -5,9 +5,9 @@
     font-family: NotoSansKR;
     font-style: normal;
     font-weight: 100;
-    src: url(src/fonts/NotoSansKR-Thin-100.otf) format("opentype"),
-         url(src/fonts/NotoSansKR-Thin-100.woff) format("woff"),
-         url(src/fonts/NotoSansKR-Thin-100.woff2) format("woff2");
+    src: url(./fonts/NotoSansKR-Thin-100.otf) format("opentype"),
+         url(./fonts/NotoSansKR-Thin-100.woff) format("woff"),
+         url(./fonts/NotoSansKR-Thin-100.woff2) format("woff2");
     unicode-range: U+ac00-d7a3
 }
 
@@ -15,9 +15,9 @@
     font-family: NotoSansKR;
     font-style: normal;
     font-weight: 300;
-    src: url(src/fonts/NotoSansKR-Light-300.otf) format("opentype"),
-         url(src/fonts/NotoSansKR-Light-300.woff) format("woff"),
-         url(src/fonts/NotoSansKR-Light-300.woff2) format("woff2");
+    src: url(./fonts/NotoSansKR-Light-300.otf) format("opentype"),
+         url(./fonts/NotoSansKR-Light-300.woff) format("woff"),
+         url(./fonts/NotoSansKR-Light-300.woff2) format("woff2");
     unicode-range: U+ac00-d7a3
 }
 
@@ -25,9 +25,9 @@
     font-family: NotoSansKR;
     font-style: normal;
     font-weight: 400;
-    src: url(src/fonts/NotoSansKR-Regular-400.otf) format("opentype"),
-         url(src/fonts/NotoSansKR-Regular-400.woff) format("woff"),
-         url(src/fonts/NotoSansKR-Regular-400.woff2) format("woff2");
+    src: url(./fonts/NotoSansKR-Regular-400.otf) format("opentype"),
+         url(./fonts/NotoSansKR-Regular-400.woff) format("woff"),
+         url(./fonts/NotoSansKR-Regular-400.woff2) format("woff2");
     unicode-range: U+ac00-d7a3
 }
 
@@ -35,9 +35,9 @@
     font-family: NotoSansKR;
     font-style: normal;
     font-weight: 500;
-    src: url(src/fonts/NotoSansKR-Medium-500.otf) format("opentype"),
-         url(src/fonts/NotoSansKR-Medium-500.woff) format("woff"),
-         url(src/fonts/NotoSansKR-Medium-500.woff2) format("woff2");
+    src: url(./fonts/NotoSansKR-Medium-500.otf) format("opentype"),
+         url(./fonts/NotoSansKR-Medium-500.woff) format("woff"),
+         url(./fonts/NotoSansKR-Medium-500.woff2) format("woff2");
     unicode-range: U+ac00-d7a3
 }
 
@@ -45,9 +45,9 @@
     font-family: NotoSansKR;
     font-style: normal;
     font-weight: 700;
-    src: url(src/fonts/NotoSansKR-Bold-700.otf) format("opentype"),
-         url(src/fonts/NotoSansKR-Bold-700.woff) format("woff"),
-         url(src/fonts/NotoSansKR-Bold-700.woff2) format("woff2");
+    src: url(./fonts/NotoSansKR-Bold-700.otf) format("opentype"),
+         url(./fonts/NotoSansKR-Bold-700.woff) format("woff"),
+         url(./fonts/NotoSansKR-Bold-700.woff2) format("woff2");
     unicode-range: U+ac00-d7a3
 }
 
@@ -55,9 +55,9 @@
     font-family: NotoSansKR;
     font-style: normal;
     font-weight: 900;
-    src: url(src/fonts/NotoSansKR-Black-900.otf) format("opentype"),
-         url(src/fonts/NotoSansKR-Black-900.woff) format("woff"),
-         url(src/fonts/NotoSansKR-Black-900.woff2) format("woff2");
+    src: url(./fonts/NotoSansKR-Black-900.otf) format("opentype"),
+         url(./fonts/NotoSansKR-Black-900.woff) format("woff"),
+         url(./fonts/NotoSansKR-Black-900.woff2) format("woff2");
     unicode-range: U+ac00-d7a3
 }
 
@@ -66,54 +66,54 @@
     font-family: Inter;
     font-style: normal;
     font-weight: 100;
-    src: url(src/fonts/inter-Thin-100.ttf) format("truetype"),
-         url(src/fonts/inter-Thin-100.woff) format("woff"),
-         url(src/fonts/inter-Thin-100.woff2) format("woff2");
+    src: url(./fonts/inter-Thin-100.ttf) format("truetype"),
+         url(./fonts/inter-Thin-100.woff) format("woff"),
+         url(./fonts/inter-Thin-100.woff2) format("woff2");
 }
 
 @font-face {
     font-family: Inter;
     font-style: normal;
     font-weight: 300;
-    src: url(src/fonts/inter-Light-300.ttf) format("truetype"),
-         url(src/fonts/inter-Light-300.woff) format("woff"),
-         url(src/fonts/inter-Light-300.woff2) format("woff2");
+    src: url(./fonts/inter-Light-300.ttf) format("truetype"),
+         url(./fonts/inter-Light-300.woff) format("woff"),
+         url(./fonts/inter-Light-300.woff2) format("woff2");
 }
 
 @font-face {
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    src: url(src/fonts/inter-regular-400.ttf) format("truetype"),
-         url(src/fonts/inter-regular-400.woff) format("woff"),
-         url(src/fonts/inter-regular-400.woff2) format("woff2");
+    src: url(./fonts/inter-regular-400.ttf) format("truetype"),
+         url(./fonts/inter-regular-400.woff) format("woff"),
+         url(./fonts/inter-regular-400.woff2) format("woff2");
 }
 
 @font-face {
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
-    src: url(src/fonts/inter-Medium-500.ttf) format("truetype"),
-         url(src/fonts/inter-Medium-500.woff) format("woff"),
-         url(src/fonts/inter-Medium-500.woff2) format("woff2");
+    src: url(./fonts/inter-Medium-500.ttf) format("truetype"),
+         url(./fonts/inter-Medium-500.woff) format("woff"),
+         url(./fonts/inter-Medium-500.woff2) format("woff2");
 }
 
 @font-face {
     font-family: Inter;
     font-style: normal;
     font-weight: 700;
-    src: url(src/fonts/inter-Bold-700.ttf) format("truetype"),
-         url(src/fonts/inter-Bold-700.woff) format("woff"),
-         url(src/fonts/inter-Bold-700.woff2) format("woff2");
+    src: url(./fonts/inter-Bold-700.ttf) format("truetype"),
+         url(./fonts/inter-Bold-700.woff) format("woff"),
+         url(./fonts/inter-Bold-700.woff2) format("woff2");
 }
 
 @font-face {
     font-family: Inter;
     font-style: normal;
     font-weight: 900;
-    src: url(src/fonts/inter-Black-900.ttf) format("truetype"),
-         url(src/fonts/inter-Black-900.woff) format("woff"),
-         url(src/fonts/inter-Black-900.woff2) format("woff2");
+    src: url(./fonts/inter-Black-900.ttf) format("truetype"),
+         url(./fonts/inter-Black-900.woff) format("woff"),
+         url(./fonts/inter-Black-900.woff2) format("woff2");
 }
 
 /* Silk */
@@ -121,26 +121,26 @@
     font-family: Silk;
     font-style: normal;
     font-weight: 300;
-    src: url(src/fonts/NotoSerifDisplay-Light-300) format("truetype");
+    src: url(./fonts/NotoSerifDisplay-Light-300) format("truetype");
 }
 
 @font-face {
     font-family: Silk;
     font-style: normal;
     font-weight: 400;
-    src: url(src/fonts/NotoSerifDisplay-Regular-400.ttf) format("truetype");
+    src: url(./fonts/NotoSerifDisplay-Regular-400.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Silk;
     font-style: normal;
     font-weight: 500;
-    src: url(src/fonts/NotoSerifDisplay-Medium-500.ttf) format("truetype");
+    src: url(./fonts/NotoSerifDisplay-Medium-500.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Silk;
     font-style: normal;
     font-weight: 700;
-    src: url(src/fonts/NotoSerifDisplay-Bold-700.ttf) format("truetype");
+    src: url(./fonts/NotoSerifDisplay-Bold-700.ttf) format("truetype");
 }
