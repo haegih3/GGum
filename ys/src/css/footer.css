@@ -1,0 +1,43 @@
+.btn_compass {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 170px;
+    font-size: 0;
+    text-align: center;
+    overflow: hidden;
+    z-index: 2;
+    padding: 0;
+    background-color: #000;
+}
+.btn-arrow:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url(data:src/image/svg+xml;base64,compass.svg) no-repeat;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transition: transform .2s linear;
+    transform: translate(-50%,-50%);
+}
+
+.btn_top {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 0;
+    text-align: center;
+    overflow: hidden;
+    z-index: 2;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid #000;
+}

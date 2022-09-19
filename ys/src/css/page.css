@@ -1,0 +1,48 @@
+/* main */
+
+.intro_txt {
+    z-index: 1;
+}
+.intro_txt::before {
+    position: absolute;
+    top: 0;
+    left: calc(50% - .45em);
+    transform: translateX(-50%);
+    content: '';
+    display: block;
+    width: calc(100% - 5em);
+    height: 100%;
+    z-index: -1;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+}
+.sub_desc {
+    color: var(--gray-500);
+}
+
+.intro_me {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #ffffff 0%, #f0edab 25%, #d8b8e0 75%, #a7cae5 100%);
+}
+
+#cube {
+    display: none;
+    background: url('/src/images/sponge_01.gif') no-repeat center/ 320px auto;
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 180px;
+    position: absolute;
+    bottom: calc(100% + 1em);
+    left: calc(50% - 165px);
+}
+#cube.live {
+    display: block;
+}
+    
+.intro_me.uhoh {
+    background: linear-gradient(to bottom, red 0%, #000 100%);
+}
+.intro_me.uhoh .intro_txt {
+    color: var(--yellow);
+}

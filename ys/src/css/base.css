@@ -1,0 +1,180 @@
+@charset "utf-8";
+@import url('all.min.css');
+@import url('font.css');
+@import url('common.css');
+@import url('animate.css');
+@import url('head.css');
+
+
+
+
+
+/* easter-egg */
+.easter-egg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.easter-egg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+/* line-animation */
+/* 
+    #logo_svg : script를 같이 넣어줘야 순차적으로 움직임
+                순서대로 움직이지 않고 동시 시작하려면 script 필요없이 주석풀어주면 됨(딜레이도 빼기)
+    #logo_lazy : min.js를 링크 시켜줘야함
+                 태그에 delay/duration 정보가 들어감
+                 http://lazylinepainter.info/ 참고
+*/
+#logo_svg,
+#logo_lazy {
+    width: 100%;
+    height: auto;
+    /* outline: 1px solid #ccc;
+    background-color: #fff; */
+}
+#logo_svg .logo_act {
+    /* stroke-dasharray: 220;
+    stroke-dashoffset: 0; */
+    animation: ani_s 1s forwards linear;
+}
+#logo_svg .logo_act2 {
+    /* stroke-dasharray: 1100;
+    stroke-dashoffset: 0; */
+    animation: ani_s 2s 1s forwards linear;
+}
+@keyframes ani_s {
+  /* from { stroke-dashoffset: 1100; } */
+  to { stroke-dashoffset: 0; }
+}
+
+/* marqee 1 */
+.marqee_wrap {
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+}
+.marquee {
+    width: 600px;
+    padding: 0.5em 0;
+    background-color: #f6f6f6;
+    margin-bottom: 10px;
+    position: relative;
+}
+.marquee p {
+    margin: 0;
+    width: auto;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    align-items: center;
+    -webkit-animation-name: marquee;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: marquee;
+    -moz-animation-timing-function: linear;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: marquee;
+    -ms-animation-timing-function: linear;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-name: marquee;
+    -o-animation-timing-function: linear;
+    -o-animation-duration: 5s;
+    -o-animation-iteration-count: infinite;
+    animation-name: marquee;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.marquee p:nth-child(2) {
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+/* marqee 2 */
+.flow {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.background-flow {
+    /* position: absolute;
+    left: 0; */
+    /* transition: top linear; */
+}
+.background-flow > div {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.background-flow > div:first-child .flow-txt {
+    font-weight: 600;
+    color: #f5f7fa;
+    text-shadow: -1px -1px 0 #1e1e1e, 1px -1px 0 #1e1e1e, -1px 1px 0 #1e1e1e, 1px 1px 0 #1e1e1e;
+}
+/* .background-flow > div:nth-child(2) .flow-txt {
+    -webkit-animation-duration: 100s;
+    animation-duration: 100s;
+} */
+.background-flow > div:nth-child(3) {
+    font-weight: 100;
+    color: #1e1e1e;
+}
+
+.flow-txt {
+    font-size: 100px;
+    width: auto;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    align-items: center;
+    -webkit-animation-duration: 100s;
+    animation-duration: 100s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    transition: text-shadow .5s linear,color .5s linear;
+}
+.flow-txt > span {
+    text-transform: uppercase;
+}
+.flow-txt .easter-egg {
+    flex: 0 0 150px;
+    height: 150px;
+}
+.flow-txt.ani__left {
+    -webkit-animation-name: ani-left;
+    animation-name: ani-left;
+}
+.flow-txt.ani__right {
+    -webkit-animation-name: ani-right;
+    animation-name: ani-right;
+}
+.flow-txt:nth-child(2) {
+    -webkit-animation-delay: 50s;
+    animation-delay: 50s;
+}
+.flow-txt:nth-child(2).ani__left {
+    -webkit-animation-name: ani-left2;
+    animation-name: ani-left2;
+}
+.flow-txt:nth-child(2).ani__right {
+    -webkit-animation-name: ani-right2;
+    animation-name: ani-right2;
+}
+
