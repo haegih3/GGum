@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="src/images/icon/favicon.ico"> -->
+    <link rel="apple-touch-icon" sizes="57x57" href="src/images/logo/plant_logo/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="src/images/logo/plant_logo/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="src/images/logo/plant_logo/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="src/images/logo/plant_logo/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="src/images/logo/plant_logo/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="src/images/logo/plant_logo/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="src/images/logo/plant_logo/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="src/images/logo/plant_logo/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/images/logo/plant_logo/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="src/images/logo/plant_logo/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/images/logo/plant_logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="src/images/logo/plant_logo/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/images/logo/plant_logo/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="src/images/logo/plant_logo/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="src/plugins/themify/css/themify-icons.css">
+    <link rel="stylesheet" href="src/plugins/fontawesome/css/all.css">
+    <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/page.css">
+
+    <script src="src/plugins/jquery/jquery.js"></script>
+    <!-- countup ani -->
+    <script src="src/plugins/counterup/jquery.waypoints.min.js"></script>
+    <script src="src/plugins/counterup/jquery.counterup.min.js"></script>
+    <!-- svg drawing -->
+    <script src="src/plugins/lazy-line-painter/lazy-line-painter-1.9.6.min.js"></script>
+    <script src="src/js/main.js"></script>
+</head>
+<body class="posr">
+<div id="layout">
+<div id="main">
+    <div class="wrap">
+        <div class="skip_navi">
+            <a href="#main_content">본문 바로가기</a>
+            <a href="#gnb">메뉴목록 바로가기</a>
+        </div>
+        <header>
+            <div class="inner">
+                <h1 id="logo_s"><a href="#" title="홈으로 바로가기"><img src="src/images/logo/logo_lazy.svg" alt="로고"></a></h1>
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="javascript:void(0);">입력폼</a></li>
+                        <li><a href="javascript:void(0);">흐르는메뉴보기</a></li>
+                    </ul>
+                </nav>
+                <!-- <div class="flow_wrap posr">
+                !-- <div class="marqee_wrap">
+                    <div class="marquee">
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                    </div>
+                </div>
+                --
+                
+                <div class="flow">
+                    <div class="background-flow">
+                        <div>
+                            <div class="flow-txt ani__left">
+                                <div class="easter-egg"><img src="src/images/easteregg_img_0_0.png"></div>
+                                <span>Our core Value →</span>
+                                <div class="easter-egg"><img src="src/images/easteregg_main_0_0.jpg"></div>
+                                <span>¹Outstanding</span>
+                                <div class="easter-egg"><img src="src/images/easteregg_main_1_0.jpg"></div>
+                                <span>²actualized</span>
+                                <div class="easter-egg"><img src="src/images/easteregg_main_2_0.jpg"></div>
+                                <span>³open</span>
+                                <div class="easter-egg"><img src="src/images/easteregg_main_3_0.jpg"></div>
+                                <span>⁴impactful</span>
+                            </div>
+                            <div class="flow-txt ani__left">
+                                <div class="easter-egg"><img src="src/images/easteregg_img_0_0.png"></div>
+                                <span>Our core Value →</span>
+                                <div class="easter-egg"><img src="src/images/easteregg_main_0_0.jpg"></div>
+                                <span>¹Outstanding</span>
+                                <div class="easter-egg"><img src="src/images/easteregg_main_1_0.jpg"></div>
+                                <span>²actualized</span>
+                                <div class="easter-egg"><img src="src/images/easteregg_main_2_0.jpg"></div>
+                                <span>³open</span>
+                                <div class="easter-egg"><img src="src/images/easteregg_main_3_0.jpg"></div>
+                                <span>⁴impactful</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                !-- line animation --
+                <div class="svg_wrap">
+                    <svg version="1.1" id="logo_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" style="background: none;" xml:space="preserve" data-llp-composed="true" class="lazy-line-painter">
+                        <style type="text/css">
+                            .st0{fill:none;stroke:#231815;stroke-width:20;stroke-miterlimit:0;}
+                        </style>
+                        <line id="_x5F_" class="st0 logo_act" x1="0.03" y1="439.02" x2="183.5" y2="439.02" data-llp-id="logo_lazy-0" data-llp-duration="2000" data-llp-delay="0" fill-opacity="0" style=""/>
+                        <path id="h" class="st0 logo_act2" d="M267.21,48.9v400.09l0.09-127.42c0,0-0.51-41.71,10.34-65.76c14.79-32.79,33.21-53.47,59.11-66.77&#10;&#9;c25.9-13.31,70.87-19.14,103.08-0.48c34.46,19.96,42.51,51.64,45.91,62.73c3.56,11.64,4.28,34.93,4.28,45.86s0,151.84,0,151.84" data-llp-id="logo_lazy-1" data-llp-duration="2000" data-llp-delay="2000" fill-opacity="0" style=""/>
+                    </svg>
+                    <script>
+                        Array.from(document.getElementsByClassName("st0")).forEach(pathElement => {
+                            pathElement.setAttribute('style', 'stroke-dasharray:'+pathElement.getTotalLength()+';stroke-dashoffset:'+pathElement.getTotalLength())
+                        });
+                        
+                        // var myPath = document.querySelector("path");
+                        // var length = myPath.getTotalLength();
+                        // console.log(length);1070.3846435546875
+                    </script>
+                </div>
+            </div>
+            -->
+            </div>
+        </header>
+        <main id="main_content">
+            <div class="intro">
+                <div class="intro_me f_center">
+                    <div class="posr talign_c">
+                        <div class="intro_txt posr" style="font-size: 5rem;">저는 <span class="words day">해기입</span>니다.</div>
+                        <div class="sub_desc" style="font-weight: 300; padding-top: 1em; padding-right: 3em;">밑줄 부분에 마우스를 올려보세요.</div>
+                        <div id="cube"></div>
+                    </div>
+                </div>
+            </div>
+
+            <form action="">
+                <fieldset>
+                    <legend>개인정보</legend>
+                    <ul>
+                        <li><label for="input01">이름</label><input type="text" id="input01" placeholder="아무개"></li>
+                        <li><label for="input01">전화번호</label><input type="text" id="input01" placeholder="숫자만 입력해주세요"></li>
+                    </ul>
+                </fieldset>
+            </form>
+
+            <div class="flow">
+                <div class="background-flow">
+                    <div>
+                        <div class="flow-txt ani__left">
+                            <div class="easter-egg"><img src="src/images/easteregg_img_0_0.png"></div>
+                            <span>Our core Value →</span>
+                            <div class="easter-egg"><img src="src/images/easteregg_main_0_0.jpg"></div>
+                            <span>¹Outstanding</span>
+                            <div class="easter-egg"><img src="src/images/easteregg_main_1_0.jpg"></div>
+                            <span>²actualized</span>
+                            <div class="easter-egg"><img src="src/images/easteregg_main_2_0.jpg"></div>
+                            <span>³open</span>
+                            <div class="easter-egg"><img src="src/images/easteregg_main_3_0.jpg"></div>
+                            <span>⁴impactful</span>
+                        </div>
+                        <div class="flow-txt ani__left">
+                            <div class="easter-egg"><img src="src/images/easteregg_img_0_0.png"></div>
+                            <span>Our core Value →</span>
+                            <div class="easter-egg"><img src="src/images/easteregg_main_0_0.jpg"></div>
+                            <span>¹Outstanding</span>
+                            <div class="easter-egg"><img src="src/images/easteregg_main_1_0.jpg"></div>
+                            <span>²actualized</span>
+                            <div class="easter-egg"><img src="src/images/easteregg_main_2_0.jpg"></div>
+                            <span>³open</span>
+                            <div class="easter-egg"><img src="src/images/easteregg_main_3_0.jpg"></div>
+                            <span>⁴impactful</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flow-txt ani__right"><span>clr agent learning video qa video understanding multi-modal understanding gm</span></div>
+                        <div class="flow-txt ani__right"><span>clr agent learning video qa video understanding multi-modal understanding gm</span></div>
+                    </div>
+                    <div>
+                        <div class="flow-txt ani__left"><span>largescale / kogpt engpt align/clip dall-e digital human pose api facetalk bg blur</span></div>
+                        <div class="flow-txt ani__left"><span>largescale / kogpt engpt align/clip dall-e digital human pose api facetalk bg blur</span></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <span class="counter">1,234,567</span>
+            <script>
+                $(function($) {
+                    $('.counter').counterUp({
+                        delay: 10,
+                        time: 1000
+                    });
+                });
+            </script>
+            <div>
+
+            </div>
+        </footer>
+    </div>
+    <!-- <a href="https://github.com/themefisher/" target="_blank">go to GitHub<i class="ti-github"></i></a> -->
+    <div class="btn_compass"></div>
+    <div class="btn_top"></div>
+</div>
+</div>
+
+<script>
+    // buttons
+    const wakeUpButton = document.querySelector("[data-wake-up]");
+    const sleepButton = document.querySelector("[data-sleep]");
+    // area
+    const area = document.querySelector("[data-mouse-follow-area]");
+    const followArea = new MouseFollower(area);
+    // event listener to buttons
+    wakeUpButton.addEventListener("click", () => {
+        followArea.wakeUp();
+    });
+    sleepButton.addEventListener("click", () => {
+        followArea.sleep();
+    });
+</script>
+</body>
+</html>
